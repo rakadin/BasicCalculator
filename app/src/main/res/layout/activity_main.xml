@@ -34,7 +34,7 @@
             android:layout_marginLeft="10dp" android:fitsSystemWindows="true">
             <Button  android:textSize="32dp" android:layout_width="85dp" android:layout_height="60dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"></Button>
             <Button  android:textSize="32dp" android:layout_width="85dp" android:layout_height="60dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"></Button>
-            <Button  android:textSize="32dp" android:layout_width="85dp" android:layout_height="60dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"></Button>
+            <Button  android:textSize="23dp" android:id="@+id/ac" android:text="AC" android:layout_width="85dp" android:layout_height="60dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"></Button>
             <Button android:background="#B52C2C" android:id="@+id/del" android:text="DEL" android:textSize="20dp" android:layout_width="85dp" android:layout_height="50dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"></Button>
         </TableRow>
         <TableRow android:layout_height="100dp" android:layout_marginRight="10dp"

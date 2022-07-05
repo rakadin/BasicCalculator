@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Button ButEight;
     Button ButNine;
     Button del;
+    Button ButAc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         window = findViewById(R.id.show);
         ans = findViewById(R.id.ansText);
         del = findViewById(R.id.del);
+        ButAc = findViewById(R.id.ac);
 
         ButAdd.setOnClickListener(ButAddClick);
         ButDiv.setOnClickListener(ButDivClick);
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         del.setOnClickListener(ButDelClick);
         ButTwo.setOnClickListener(ButTwoClick);
         ButAns.setOnClickListener(ButAnsClick);
+        ButAc.setOnClickListener(ButAcClick);
     }
     View.OnClickListener ButAddClick = new View.OnClickListener() {
         @Override
@@ -216,6 +219,13 @@ public class MainActivity extends AppCompatActivity {
             smath="";
             window.setText(smath);
             ans.setText(smath);
+        }
+    };
+    View.OnClickListener ButAcClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            smath = smath.substring(0,smath.length()-1);
+            window.setText(temsmath);
         }
     };
 }
